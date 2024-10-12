@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat</title>
+    <link href="/css/tailwind.css" rel="stylesheet">
+
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">AI Chat</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="/" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="/games.html" class="hover:text-gray-300">Games</a></li>
+                    <li><a href="/emulator.html" class="hover:text-gray-300">Emulator</a></li>
+                    <li><button onclick="openStealthMode()" class="hover:text-gray-300">Stealth Mode</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-10">
+        <section class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold mb-4">Ask the AI</h2>
+            <input type="text" id="user-input" class="w-full p-2 border border-gray-300 rounded-lg" placeholder="Ask something..." />
+            <button onclick="callAI()" class="bg-blue-500 text-white p-2 mt-4 rounded-lg w-full hover:bg-blue-700">Ask AI</button>
+            <div id="ai-response" class="mt-4 bg-gray-200 p-4 rounded-lg"></div>
+        </section>
+    </main>
+
+    <script src="/src/js/app.js"></script>
+</body>
+</html>

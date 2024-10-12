@@ -1,0 +1,17 @@
+{
+  "name": "jamalunblock",
+  "version": "1.0.0",
+  "main": "index.js",
+"scripts": {
+  "build:css": "npx tailwindcss -i ./src/css/styles.css -o ./public/css/tailwind.css --watch"
+}
+,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "tailwindcss": "^3.4.13"
+  }
+  
+}
